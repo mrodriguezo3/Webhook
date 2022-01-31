@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/products
+Content-Type: application/json
+
+{
+   "title":"Kit Pocion Burbujeante",
+   "description":"Colegios",
+   "category":"En Produccion",
+   "price":"100",
+   "dateAdded":"January 19, 2022 15:02:00",
+}

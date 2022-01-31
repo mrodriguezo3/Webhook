@@ -1,0 +1,26 @@
+{
+  "name": "webhook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js", // Ejecuta index.js
+    "server": "nodemon server.js", // Se ejecuta el index.js a través de nodemon
+    "client": "npm start --prefix client", // Comando que ejecuta el cliente 
+    "dev": "concurrently \"npm run server\" \"npm run client\"" // Se utiliza para ejecutar el server y el cliente al mismo tiempo
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0", // Codifica las contraseñas de los usuarios antes de guardarlas
+    "concurrently": "^7.0.0", // Ejecuta servidor y clientes al mismo tiempo
+    "config": "^3.3.3", // Almacena datos importantes como claves secretas
+    "express": "^4.17.1", // Biblioteca requerida para construir la API
+    "jsonwebtoken": "^8.5.1", //Crea JWT con fines de autenticacion 
+    "mongoose": "^5.11.11", // Conexión entre MongoDB y la aplicación
+    "validator": "^13.5.2" // Valida datos
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7" //Mantiene el servidor en funcionamiento y permite ejecutar el servidor a penas se detecten cambios.
+  }
+}

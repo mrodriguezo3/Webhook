@@ -1,0 +1,11 @@
+POST http://localhost:3001/api/register
+Content-Type: application/json
+
+{
+   "name":"Felipe123",
+   "email":"Felipe@gmail.com",
+   "password":"lalala",
+   "registerDate":"January 19, 2022 15:02:00",
+   "rank":"Admin",
+   "courses":"something"
+}

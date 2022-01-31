@@ -1,0 +1,5 @@
+// Almacena claves importantes dentro del archivo
+
+{
+"dbURI": "YOUR_DATABASE_URI"
+}
